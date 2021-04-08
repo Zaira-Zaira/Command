@@ -21,18 +21,18 @@ class FormController{
                 $this->warning = '<p class="warning">Veuillez renseigner tous les champs!</p>';
                 return false;
             }
-            else if($this->tablettes < 0  && $this->pc < 0 && $this->portable < 0 )
+            else if($this->tablettes < 0  || $this->pc < 0 || $this->portable < 0 )
             {
-                $this->warning = '<p>La quantité des produits doivent être inférieur de 0</p>';
+                $this->warning = '<p class="warning">La quantité des produits doivent être supérieur à 0</p>';
                 return false;
             }
             else if($this->tablettes > 10 || $this->pc > 10 || $this->portable > 10)
              {
-               $this->warning = '<p>Vous ne pouvez pas commander plus de 10 articles par produits</p>';
+               $this->warning = '<p class="warning">Vous ne pouvez pas commander plus de 10 articles par produits</p>';
                return false;
              }
              else if($this->tablettes == 0 && $this->pc == 0 && $this->portable == 0){
-                 $this->warning = '<p>Vous devez commander au moins un article</p>';
+                 $this->warning = '<p class="warning">Vous devez commander au moins un article</p>';
                  return false;
              }
              else{
