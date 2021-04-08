@@ -95,10 +95,6 @@ section p, section ul{
     background-color: #fff;
     padding: 1.0rem;
 }
-section .warning{
-    color: #e74c3c;
-    line-height: 3.5rem;
-}
 .warning{
     margin: 0 auto;
     color: #FFF;
@@ -109,4 +105,9 @@ section .warning{
     max-width: 60rem;
     padding: 1.0rem;
     margin-bottom: 2.0rem;
+}
+
+section .warning{
+    color: #e74c3c;
+    line-height: 3.5rem;
 }
