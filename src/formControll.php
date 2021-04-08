@@ -18,7 +18,7 @@ class FormController{
         {
             if($this->tablettes == "" || $this->pc == "" || $this->portable == "" || $this->adresse == "")
             {
-                $this->warning = '<p>Veuillez renseigner tous les champs!</p>';
+                $this->warning = '<p class="warning">Veuillez renseigner tous les champs!</p>';
                 return false;
             }
             else if($this->tablettes < 0  && $this->pc < 0 && $this->portable < 0 )

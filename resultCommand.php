@@ -12,15 +12,16 @@ session_start()
 </head>
 <body>
     <header>
-
+        <h1>Techos prod</h1>
+        <h2>Voici le résultat de votre command</h2>
     </header>
    <?php
    include('./src/Product.php');
-   $achat = new Product($_SESSION['tablettes'], $_SESSION['pc'], $_SESSION['portable'], $_SESSION['adresse'], date("Y-m-d"));
+   $achat = new Product($_SESSION['tablettes'], $_SESSION['pc'], $_SESSION['portable'], $_SESSION['adresse'], date("Y-m-d, H:m"));
    ?>
     <main>
         <section>
-            <h2>Votre commande du</h2>
+            <h2>Votre commande du <?php print $achat->getDate()?></h2>
             <h3>Détails de votre commande</h3>
             <p>Nombre de produits :  <?php print  $achat->totalProducts() ?></p>
             <ul>

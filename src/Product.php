@@ -13,6 +13,10 @@ class Product{
     }
 
 
+    public function getDate()
+    {
+           return $this->date;
+    }
     
     public function getTablettes()
     {
