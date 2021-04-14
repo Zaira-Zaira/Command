@@ -2,7 +2,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font: 1.6rem sans-serif;
+    font: 1.6rem "Open-Sans" sans-serif;
     margin: 0;
 }
 *{
@@ -32,7 +32,6 @@ form,section{
     
 }
 form table{
-    
     width: 100%;
 }
 form table,td,th{
@@ -52,6 +51,12 @@ form table td input{
     line-height: 2.5rem;
     padding: .3rem;
 }
+form table td input::placeholder{
+    opacity: .7;
+}
+form table td input:focus{
+    border: solid 0.1rem #222;
+}
 
 form table td input[type="submit"],section p a{
     background-color: #222;
@@ -62,10 +67,15 @@ form table td input[type="submit"],section p a{
     width: 20rem;
     text-align: center;
 }
+form table td input[type='submit']:focus {
+    color: #222;
+    background-color: #FFF;
+    border: solid 0.1rem #222;
+}
 tfoot{
     text-align: center;
 }
-form table td input[type="number"]{
+form table  td input[type="number"]{
     display: inline-block;
     width: 10%;
 }
@@ -73,7 +83,6 @@ form table td input[type="text"]{
     width: 50%;
     
 }
-
 section h2, section h3, section p{
     line-height: 2.5rem;
 }
@@ -87,9 +96,10 @@ section h2,section h3{
     background-color: #34495e;
     color: #fafafa;
     padding: 1.0rem;
+    line-height: 2.5rem;
 }
 section h3{
-    background-color: #95a5a6;
+    background-color: #4d5b5c;;
 }
 section p, section ul{
     background-color: #fff;
@@ -106,7 +116,6 @@ section p, section ul{
     padding: 1.0rem;
     margin-bottom: 2.0rem;
 }
-
 section .warning{
     color: #e74c3c;
     line-height: 3.5rem;

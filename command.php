@@ -28,7 +28,7 @@ session_start();
          $_SESSION['pc'] = $_POST['pc'];
          $_SESSION['portable'] = $_POST['portable'];
          $_SESSION['adresse'] = $_POST['adresse'];
-         header('Location: resultCommand.php');
+         header('Location: validation_command.php');
          exit();
        }
        
@@ -59,7 +59,7 @@ session_start();
       </tr>
       <tfoot>
         <tr>
-          <td colspan=2><input type=submit name="send" value="Envoyer la commande"></td>
+          <td colspan=2><input type=submit name="send" value="Envoyer la commande" aria-label="send"></td>
         </tr>
     </tfoot>
     </table>

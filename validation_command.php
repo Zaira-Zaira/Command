@@ -25,9 +25,9 @@ session_start()
             <h3>Détails de votre commande</h3>
             <p>Nombre de produits :  <?php print  $achat->totalProducts() ?></p>
             <ul>
-                <li><?php print  $achat->getTablettes() ?>  : Tablettes</li>
+                <li><?php print  $achat->getTablettes() ?> : Tablettes</li>
                 <li><?php print  $achat->getPc() ?> : PC  </li>
-                <li><?php print  $achat->getPortable() ?>  : Portables</li>
+                <li><?php print  $achat->getPortable() ?> : Portables</li>
             </ul>
             <p>Le total de votre command est de <?php print $achat->totalPrice(600, 1200,700) ?></p>
             <p>Le total avec TVA de votre command est de <?php print $achat->getTva(600, 1200,700) ?> </p>
