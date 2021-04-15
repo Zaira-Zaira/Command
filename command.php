@@ -60,7 +60,7 @@ session_start();
       </tr>
       <tfoot>
         <tr>
-          <td colspan=2><input type=submit name="send" value="Envoyer la commande" aria-label="send"></td>
+          <td colspan=2><input type=submit name="send" value="Envoyer la commande" aria-label="submit"></td>
         </tr>
     </tfoot>
     </table>
